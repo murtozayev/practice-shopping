@@ -118,3 +118,4 @@ cards.forEach((card) => {
         })
     })
 })
+// There is no resposive and it doesn't good work it was practice for some algorithm
