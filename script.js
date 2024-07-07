@@ -37,9 +37,9 @@ sorted.forEach((item) => {
 const form = document.querySelector('form')
 
 form.addEventListener('submit', (e) => {
+    e.preventDefault()
     let sort = quickSort(data.map(x => x.title))
     let res = binarySearch(sort, form.search.value)
-    e.preventDefault()
     card.innerHTML = `
             <div class="cards">
                 <figure></figure>
